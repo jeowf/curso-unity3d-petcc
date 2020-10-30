@@ -64,7 +64,7 @@ public class EnemyController : MonoBehaviour
             PlayerLife.playerLife -= 20;
             if(PlayerLife.playerLife <= 0)
             {
-                PlayerController.DestroyPlayer = true;
+                PlayerShipController.DestroyPlayer = true;
                 Destroy(other.gameObject, 1f);
                 GameOver.isPlayerDead = true;
                 

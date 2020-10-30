@@ -31,7 +31,7 @@ public class RockController : MonoBehaviour
             PlayerLife.playerLife -= 50;
             if(PlayerLife.playerLife <= 0)
             {
-                PlayerController.DestroyPlayer = true;
+                PlayerShipController.DestroyPlayer = true;
                 Destroy(other.gameObject, 1f);
                 GameOver.isPlayerDead = true;
             }
